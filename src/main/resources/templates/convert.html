@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px;
+        }
+        .file-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>PDF转word</h2>
+    <form action="/covertToWord" method="post" enctype="multipart/form-data">
+        <input type="file" class="file-input" name="fileToUpload" accept=".pdf">
+        <br><br>
+        <input type="submit" class="btn" value="Covert File">
+    </form>
+</div>
+</body>
+</html>
