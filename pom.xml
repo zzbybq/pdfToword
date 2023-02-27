@@ -82,13 +82,30 @@
 <!--            <version>1.4</version>-->
 <!--        </dependency>-->
 
+<!--        <dependency>-->
+<!--            <groupId>e-icebule</groupId>-->
+<!--            <artifactId>spire.pdf.free</artifactId>-->
+<!--            <version>5.1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/Spire.Pdf.jar</systemPath>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>e-iceblue</groupId>-->
+<!--            <artifactId>spire.doc.free</artifactId>-->
+<!--            <version>5.2.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/Spire.Doc.jar</systemPath>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>e-icebule</groupId>
-            <artifactId>spire.pdf</artifactId>
-            <version>3.4.2</version>
+            <groupId>e-iceblue</groupId>
+            <artifactId>spire.office.free</artifactId>
+            <version>3.1.1</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/spire.pdf-9.2.1.jar</systemPath>
+            <systemPath>${project.basedir}/lib/spire.office.free-3.1.1.jar</systemPath>
         </dependency>
+
 
 
         <dependency>
