@@ -8,8 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Slf4j
 public class IndexController {
 
-    @RequestMapping("/index")
-    public String index() {
-        return "convert";
-    }
+
+
+        @RequestMapping("/index")
+        public String index() {
+            return "index";
+        }
+
+
+        @RequestMapping("/convert")
+        public String convert() {
+            return "convert";
+        }
+
+        @RequestMapping("/merge")
+        public String merge(){return "/pdfHandle/mergePdf";}
+
 }
