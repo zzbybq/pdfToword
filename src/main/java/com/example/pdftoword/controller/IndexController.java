@@ -22,6 +22,6 @@ public class IndexController {
         }
 
         @RequestMapping("/merge")
-        public String merge(){return "mergePdf";}
+        public String merge(){return "/pdfHandle/mergePdf";}
 
 }
