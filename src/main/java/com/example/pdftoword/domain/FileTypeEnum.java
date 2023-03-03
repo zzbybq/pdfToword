@@ -8,9 +8,13 @@ import java.util.stream.Stream;
 @AllArgsConstructor
 public enum FileTypeEnum {
 
-    PDF("application/pdf","pdf文件类型");
+    PDF("application/pdf", ".pdf", "pdf文件类型"),
+    DOC("", ".docx", "doc文件类型"),
+    ;
 
     private String type;
+
+    private String suffix;
 
     private String desc;
 
