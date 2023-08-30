@@ -17,6 +17,8 @@ public class DocOperateServiceImpl implements DocOperateService {
     @Override
     public byte[] mergeDocs(String docFilePath, ByteArrayOutputStream outputStream) {
         //将转换的doc进行合并
+        long startTime = System.currentTimeMillis();
+        log.info("合并doc开始,startTime={}", startTime);
         Document document = new Document();
         File[] docfs = new File(docFilePath).listFiles();
         if (docfs == null) {
@@ -26,6 +28,7 @@ public class DocOperateServiceImpl implements DocOperateService {
             document.insertTextFromFile(docFilePath + SPLIT + (i + 1) + DOC.getSuffix(), com.spire.doc.FileFormat.Docx_2013);
         }
         document.saveToStream(outputStream, com.spire.doc.FileFormat.Docx);
+        log.info("合并doc结束,耗时={}s", (System.currentTimeMillis() - startTime) / 1000);
         return outputStream.toByteArray();
     }
 }
